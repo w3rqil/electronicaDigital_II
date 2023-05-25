@@ -1,2 +1,2 @@
-# electronicaDigitalII
-Trabajo práctico final de la materia Electrónica Digital II
+# Eectrónica Digital II
+Trabajo práctico final de la materia Electrónica Digital II.
