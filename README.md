@@ -10,6 +10,7 @@ A[CONT1<- D'7'] --> B[CALL TECLADO]
     B --> C[CALL DECO]
     C --> D[CALL MOVER]
     D --> E[CALL MOSTRAR]
+    E-->B
  ```
  
 
