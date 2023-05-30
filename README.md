@@ -5,18 +5,18 @@ A continuación un diagrama de flujos intuitivo:
 
  ```mermaid
 flowchart TD
-
+init{{INICIO}}-->A
 A[CONT1<- D'7'] --> B[CALL TECLADO]
     B --> C[CALL DECO]
     C --> D[CALL MOVER]
     D --> E[CALL MOSTRAR]
     E-->B
-    ISR[ISR]-->F{T0IF=1}
-    F-->|Si|G[ISR TMR0]
+    ISR{{ISR}}-->F{T0IF=1}
+    F-->|Si|G(ISR TMR0)
     F-->|No|H{INTF =1}
-    H-->|Si|ASD[ISR R0]
+    H-->|Si|ASD(ISR R0)
     H-->|No|RET[RETFIE]
-    ISRR0[ISR R0]-->J[CALL COMPARAR]
+    ISRR0(ISR R0)-->J[CALL COMPARAR]
     J{ES IGUAL}-->|Si|K[CALL PRENDER LED VERDE]
     K-->CONT1[CONT1<- D'3']
     J-->|No|ROJO[CALL PRENDER LED ROJO]
