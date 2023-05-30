@@ -1,12 +1,15 @@
 # Eectrónica Digital II
 Trabajo práctico final de la materia Electrónica Digital II.
-El trabajo consiste en un sistema de control de acceso, implementado principalmente con el PIC16f877
+El trabajo consiste en un sistema de control de acceso, implementado principalmente con el PIC16f877.
+A continuación un diagrama de flujos intuitivo:
 
  ```mermaid
-flowchart LR
+flowchart TD
 
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+A[CONT1<-.3]-->F[]
+F--B[CALL TECLADO]
+B-->C[CALL DECO]
+C-->D[CALL MOVER]
+D--E[CALL MOSTRAR]
+E-->F
  ```
