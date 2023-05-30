@@ -7,7 +7,7 @@ A continuación un diagrama de flujos intuitivo:
 flowchart TD
 
 A[CONT1<-.3]-->F[]
-F--B[CALL TECLADO]
+F-->B[CALL TECLADO]
 B-->C[CALL DECO]
 C-->D[CALL MOVER]
 D--E[CALL MOSTRAR]
