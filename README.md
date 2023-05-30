@@ -6,10 +6,10 @@ A continuación un diagrama de flujos intuitivo:
  ```mermaid
 flowchart TD
 
-A[CONT1<- D'7'] -->|Text| B[CALL TECLADO]
+A[CONT1<- D'7'] --> B[CALL TECLADO]
     B --> C[CALL DECO]
-    C -->|One| D[CALL MOVER]
-    C -->|Two| E[CALL MOSTRAR]
+    C --> D[CALL MOVER]
+    D --> E[CALL MOSTRAR]
  ```
  
 
