@@ -1,0 +1,28 @@
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 34 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 35 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 36 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 37 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[202] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 45 : Argument out of range.  Least significant bits used.
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 51 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 93 : Symbol not previously defined (ALARMA)
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 94 : Symbol not previously defined (TRM0)
+Message[305] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 97 : Using default destination of 1 (file).
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 98 : Symbol not previously defined (SETTMR0)
+Message[305] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 99 : Using default destination of 1 (file).
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 101 : Symbol not previously defined (SETTMR0)
+Warning[202] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 103 : Argument out of range.  Least significant bits used.
+Error[115]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 108 : Duplicate label ("TECLADO" or redefining symbol that cannot be redefined)
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 111 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 120 : Symbol not previously defined (DELAY)
+Message[305] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 127 : Using default destination of 1 (file).
+Message[305] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 130 : Using default destination of 1 (file).
+Message[305] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 133 : Using default destination of 1 (file).
+Message[305] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 136 : Using default destination of 1 (file).
+Message[305] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 137 : Using default destination of 1 (file).
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 177 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 178 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 183 : Symbol not previously defined (DELAY)
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 188 : Symbol not previously defined (DELAY)
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 193 : Symbol not previously defined (DELAY)
+Error[113]   C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 198 : Symbol not previously defined (DELAY)
+Warning[205] C:\USERS\FLORS\DESKTOP\FACU\5TO\DIGITAL II\TPFINAL2.X\MAIN.ASM 202 : Found directive in column 1. (END)
