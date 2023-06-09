@@ -19,7 +19,12 @@ A[CONT1<- D'7'] --> B[CALL TECLADO]
     F-->|No|H{INTF =1}
     H-->|Si|ASD(ISR R0)
     H-->|No|RET[RETFIE]
-    ISRR0(ISR R0)-->J[CALL COMPARAR]
+    
+ ```
+ 
+  ```mermaid
+  flowchart TD
+ ISRR0(ISR R0)-->J[CALL COMPARAR]
     J{ES IGUAL}-->|Si|K[CALL PRENDER LED VERDE]
     K-->CONT1[CONT1<- D'3']
     J-->|No|ROJO[CALL PRENDER LED ROJO]
@@ -30,6 +35,16 @@ A[CONT1<- D'7'] --> B[CALL TECLADO]
     M-->|No|S
     CONT1-->S
     S-->T[RETURN]
- ```
- 
+    
+    A(TMR0 ISR) --> B[CONT1--]
+    B-->C{CONT1=0}-->|No|D[TMR0<-- .61]-->ret[RETFIE]
+    C-->|Si|E[CONT2--]
+    E-->F{CONT2=0}-->|No|CI[CONT1<-- .256]
+    CI-->GI[TMR0<-- .61]-->RETU[RETFIE]
+    F-->|Si|G[T0IF=0]
+    G-->H[CONT1<--.256]
+    H-->I[CONT2<-- .2]
+    I-->RETUR[RETFIE]
+   
+  ```
 
