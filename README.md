@@ -44,7 +44,7 @@ A[CONT1<- D'7'] --> B[CALL TECLADO]
     F-->|Si|G[T0IF=0]
     G-->H[CONT1<--.256]
     H-->I[CONT2<-- .2]
-    I-->RETUR[RETFIE[
+    I-->RETUR[RETFIE]
    
   ```
 
