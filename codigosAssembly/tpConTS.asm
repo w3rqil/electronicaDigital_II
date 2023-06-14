@@ -196,7 +196,7 @@ BACKC	movf CONTCHAR,W; recorro la cadena de texto en la tabla
 	decfsz CONTCHAR, F; chequeo si fue transmitida toda la cadena
 	goto BACKC
 	movlw AUXILIAR
-	movwf CONTCHAR; vuelvo a transmitir la cadena	
+	movwf CONTCHAR; vuelvo a transmitir la cadena
 ;-------------------------------------------------------------------------------
 	BANKSEL PORTA
 	BSF PORTA, 1 ; DEFINIR PUERTO DEL LED ROJO
@@ -281,32 +281,32 @@ BACK2	MOVF PORTB, 0
 	GOTO BACK2
 	GOTO BETA
 
-TEC7SEG	ADDWF PCL,1 ; asumiendo que el display es catodo comun
-	RETLW 0X3F
-	RETLW 0X06
-	RETLW 0X5B
-	RETLW 0X4F
-	RETLW 0X66
-	RETLW 0X6D
-	RETLW 0X7D
-	RETLW 0X07
-	RETLW 0X7F
-	RETLW 0X67
+;TEC7SEG	ADDWF PCL,1 ; asumiendo que el display es catodo comun
+;	RETLW 0X3F
+;	RETLW 0X06
+;	RETLW 0X5B
+;	RETLW 0X4F
+;	RETLW 0X66
+;	RETLW 0X6D
+;	RETLW 0X7D
+;	RETLW 0X07
+;	RETLW 0X7F
+;	RETLW 0X67
 
-MOVER	
-	BANKSEL PORTA
-	CLRF AUXMOVER
-	MOVWF AUXMOVER
-	MOVLW REG2
-	MOVWF REG3
-	MOVLW REG1
-	MOVFW REG2
-	MOVLW REG0
-	MOVWF REG1
-	MOVLW AUXMOVER
-	MOVWF REG0
-	RETURN
-;-----------------------------TABLAS TENSMISION---------------------------------
+;MOVER	
+;	BANKSEL PORTA
+;	CLRF AUXMOVER
+;	MOVWF AUXMOVER
+;	MOVLW REG2
+;	MOVWF REG3
+;	MOVLW REG1
+;	MOVFW REG2
+;	MOVLW REG0
+;	MOVWF REG1
+;	MOVLW AUXMOVER
+;	MOVWF REG0
+;	RETURN
+;----------------------------TABLAS TRANSMISION---------------------------------
 INCORRECTO
     addwf PCL, F
     retlw 'I'
@@ -354,32 +354,32 @@ CARACTERES
     retlw .18
 ;-------------------------------------------------------------------------------
 ;-------------------------------------------------------------------------------
-MOSTRAR	MOVLW 0X00
-	BANKSEL TRISC
-	MOVWF TRISC ;?????????????????????????????????????????
-	MOVWF TRISB ;?????????????????????????????????????????
-LOOP1	MOVLW REG3
-	BANKSEL PORTC
-	MOVWF PORTC
-	BSF PORTD, 0
-	CALL DELAY ; HAY QUE HACERLO
-	CLRF PORTD
-	MOVLW REG2
-	MOVWF PORTC
-	BSF PORTD, 1
-	CALL DELAY
-	CLRF PORTD
-	MOVLW REG1
-	MOVWF PORTC
-	BSF PORTD, 2
-	CALL DELAY
-	CLRF PORTD
-	MOVLW REG0
-	MOVWF PORTC
-	BSF PORTD, 3
-	CALL DELAY
-	CLRF PORTD
-	GOTO LOOP1
+;MOSTRAR	MOVLW 0X00 ;----- PROB NO LO USEMOS -----;----- PROB NO LO USEMOS -----;----- PROB NO LO USEMOS -----
+;	BANKSEL TRISC
+;	MOVWF TRISC ;?????????????????????????????????????????
+;	MOVWF TRISB ;?????????????????????????????????????????
+;LOOP1	MOVLW REG3
+;	BANKSEL PORTC
+;	MOVWF PORTC
+;	BSF PORTD, 0
+;	CALL DELAY ; HAY QUE HACERLO
+;	CLRF PORTD
+;	MOVLW REG2
+;	MOVWF PORTC
+;	BSF PORTD, 1
+;	CALL DELAY
+;	CLRF PORTD
+;	MOVLW REG1
+;	MOVWF PORTC
+;	BSF PORTD, 2
+;	CALL DELAY
+;	CLRF PORTD
+;	MOVLW REG0
+;	MOVWF PORTC
+;	BSF PORTD, 3
+;	CALL DELAY
+;	CLRF PORTD
+;	GOTO LOOP1
 
 END
 
